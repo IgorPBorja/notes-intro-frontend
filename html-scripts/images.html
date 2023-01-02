@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="top">Imagens</h1>
+    <!--rendering image saved on server -->
+    <!-- without determining one of the two params (width, height)-->
+    <!-- the other is just calculated to keep the same ratio-->
+    <!-- however this still renders the full image before cropping 
+        (=> SLOW)
+    -->
+    <img src="assets/laptop1.jpg" alt="laptop image"
+    width = "400", height = "300" >
+    <!-- putting some line breaks after the image -->
+    <br><br><br><br>
+    <!--rendering image via link-->
+    <img src="https://t4.ftcdn.net/jpg/03/08/69/75/360_F_308697506_9dsBYHXm9FwuW0qcEqimAEXUvzTwfzwe.jpg" 
+        width="400"    
+        alt="another laptop image">
+</body>
+</html>
