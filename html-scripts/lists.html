@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+<h1>Listas</h1>
+    <p>Uma lista não-ordenada (<em> unordered list</em>)usa a tag <strong>ul</strong>, e cada elemento da lista deve ser inserido em uma tag <strong>li</strong>.</p>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <p>Por outro lado, em uma lista ordenada (<em>ordered list</em>) apresenta seus elementos numerados, e utiliza a tag <strong>ol</strong>. Cada elemento da lista, novamente, deve ser inserido em uma tag <strong>li</strong>.</p>
+    <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ol>
+    <h2>Listas aninhadas (nested lists)</h2>
+        <ul>
+            <li> Lista 1
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+            </li>
+            <li> Lista 2
+                <ol>
+                    <li>X</li>
+                    <li>Y</li>
+                    <li>Z</li>
+                    <li>W</li>
+                </ol>
+            </li>
+            
+        </ul>
+
+<h1>Tabelas</h1>
+    <p>
+    As tabelas são criadas através da tag <strong>table</strong>. Cada linha (row) é uma tag <strong>tr</strong>. Podemos também ter um header (primeira linha), com a tag <strong>th</strong>. Dentro de cada row, registramos uma entrada como um elemento da tag <strong>td</strong>, <em>table data</em>. Por exemplo:
+    </p>
+    <table>
+        <th>Coluna 1</th>
+        <th>Coluna 2</th>
+        <th>Coluna 3</th>
+        <th>Coluna 4</th>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+    </table>
+
+<h1>Formulários</h1>
+    <p>Um formulário é criado com a tag <strong>form</strong>. Cada entrada de dados é um objeto da tag <strong>input</strong>, com os seguintes atributos:
+    </p>
+    <ul>
+        <li>type: tipo de dado (default = text)</li>
+        <li>name: texto a aparecer para identificar aquela entrada</li>
+        <li>id: identificador</li>
+    </ul>
+    <p>Podemos colocar o botão para submissão de formulário como um objeto da tag <strong>button</strong>, de tipo <strong>submit</strong>.</p>
+    <p>Para mostrar texto associado a determinada entrada no formulário, precisamos de um <strong>label</strong>, cujo atributo <strong>for</strong> seja o id daquele input. Ademais, podemos, utilizando o atributo <em>placeholder</em>, exibir ao usuário um texto prévio, que aparece antes de ele clicar naquele elemento de input.</p>
+    <p>Por fim, com o atributo <em>value</em>, podemos atribuir um valor fixo (<em>hardcoded value</em>), para, por exemplo, propósitos de teste. Esse valor aparece já preenchido quando o formulário aparece pela primeira vez na tela, e precisa ser apagado para que outro dado seja submetido no lugar.</p>
+    <form action="" method="">
+        <label for="name"> Primeiro nome</label>
+        <input type="text" name="name" id="name" placeholder="Insira seu nome aqui">
+        <br>
+
+        <label for="age">Idade</label>
+        <input type="number" name="age" id="age" 
+        placeholder="Insira sua idade aqui">
+        <br>
+
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" placeholder="Insira seu e-mail aqui (gmail)" value="email@email.com">
+        <br>
+
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Insira sua senha aqui">
+        <br><br>
+
+        <button type="submit"> Submeter formulário</button>
+    </form>
+</body>
+</html>
