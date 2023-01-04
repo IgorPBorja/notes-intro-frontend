@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-</head>
-<body>
-<h1>Listas</h1>
-    <p>Uma lista não-ordenada (<em> unordered list</em>)usa a tag <strong>ul</strong>, e cada elemento da lista deve ser inserido em uma tag <strong>li</strong>.</p>
-    <ul>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-    </ul>
-    <p>Por outro lado, em uma lista ordenada (<em>ordered list</em>) apresenta seus elementos numerados, e utiliza a tag <strong>ol</strong>. Cada elemento da lista, novamente, deve ser inserido em uma tag <strong>li</strong>.</p>
-    <ol>
-        <li>A</li>
-        <li>B</li>
-        <li>C</li>
-    </ol>
-    <h2>Listas aninhadas (nested lists)</h2>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Listas</h1>
+        <p>
+            Uma lista não-ordenada (<em> unordered list</em>)usa a tag
+            <strong>ul</strong>, e cada elemento da lista deve ser inserido em
+            uma tag <strong>li</strong>.
+        </p>
         <ul>
-            <li> Lista 1
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ul>
+        <p>
+            Por outro lado, em uma lista ordenada (<em>ordered list</em>)
+            apresenta seus elementos numerados, e utiliza a tag
+            <strong>ol</strong>. Cada elemento da lista, novamente, deve ser
+            inserido em uma tag <strong>li</strong>.
+        </p>
+        <ol>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ol>
+        <h2>Listas aninhadas (nested lists)</h2>
+        <ul>
+            <li>
+                Lista 1
                 <ul>
                     <li>A</li>
                     <li>B</li>
                     <li>C</li>
                 </ul>
             </li>
-            <li> Lista 2
+            <li>
+                Lista 2
                 <ol>
                     <li>X</li>
                     <li>Y</li>
@@ -38,62 +48,161 @@
                     <li>W</li>
                 </ol>
             </li>
-            
         </ul>
 
-<h1>Tabelas</h1>
-    <p>
-    As tabelas são criadas através da tag <strong>table</strong>. Cada linha (row) é uma tag <strong>tr</strong>. Podemos também ter um header (primeira linha), com a tag <strong>th</strong>. Dentro de cada row, registramos uma entrada como um elemento da tag <strong>td</strong>, <em>table data</em>. Por exemplo:
-    </p>
-    <table>
-        <th>Coluna 1</th>
-        <th>Coluna 2</th>
-        <th>Coluna 3</th>
-        <th>Coluna 4</th>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-    </table>
+        <h1>Tabelas</h1>
+        <p>
+            As tabelas são criadas através da tag <strong>table</strong>. Cada
+            linha (row) é uma tag <strong>tr</strong>. Podemos também ter um
+            header (primeira linha), com a tag <strong>th</strong>. Dentro de
+            cada row, registramos uma entrada como um elemento da tag
+            <strong>td</strong>, <em>table data</em>. Por exemplo:
+        </p>
+        <table>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <th>Coluna 3</th>
+            <th>Coluna 4</th>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
 
-<h1>Formulários</h1>
-    <p>Um formulário é criado com a tag <strong>form</strong>. Cada entrada de dados é um objeto da tag <strong>input</strong>, com os seguintes atributos:
-    </p>
-    <ul>
-        <li>type: tipo de dado (default = text)</li>
-        <li>name: texto a aparecer para identificar aquela entrada</li>
-        <li>id: identificador</li>
-    </ul>
-    <p>Podemos colocar o botão para submissão de formulário como um objeto da tag <strong>button</strong>, de tipo <strong>submit</strong>.</p>
-    <p>Para mostrar texto associado a determinada entrada no formulário, precisamos de um <strong>label</strong>, cujo atributo <strong>for</strong> seja o id daquele input. Ademais, podemos, utilizando o atributo <em>placeholder</em>, exibir ao usuário um texto prévio, que aparece antes de ele clicar naquele elemento de input.</p>
-    <p>Por fim, com o atributo <em>value</em>, podemos atribuir um valor fixo (<em>hardcoded value</em>), para, por exemplo, propósitos de teste. Esse valor aparece já preenchido quando o formulário aparece pela primeira vez na tela, e precisa ser apagado para que outro dado seja submetido no lugar.</p>
-    <form action="" method="">
-        <label for="name"> Primeiro nome</label>
-        <input type="text" name="name" id="name" placeholder="Insira seu nome aqui">
-        <br>
+        <h1>Formulários</h1>
+        <p>
+            Um formulário é criado com a tag <strong>form</strong>. Cada entrada
+            de dados é um objeto da tag <strong>input</strong>, com os seguintes
+            atributos:
+        </p>
+        <ul>
+            <li>type: tipo de dado (default = text)</li>
+            <li>name: texto a aparecer para identificar aquela entrada</li>
+            <li>id: identificador</li>
+        </ul>
+        <p>
+            Podemos colocar o botão para submissão de formulário como um objeto
+            da tag
+            <strong>button</strong>, de tipo <strong>submit</strong>.
+        </p>
+        <p>
+            Para mostrar texto associado a determinada entrada no formulário,
+            precisamos de um <strong>label</strong>, cujo atributo
+            <strong>for</strong> seja o id daquele input. Ademais, podemos,
+            utilizando o atributo <em>placeholder</em>, exibir ao usuário um
+            texto prévio, que aparece antes de ele clicar naquele elemento de
+            input.
+        </p>
+        <p>
+            Por fim, com o atributo <em>value</em>, podemos atribuir um valor
+            fixo (<em>hardcoded value</em>), para, por exemplo, propósitos de
+            teste. Esse valor aparece já preenchido quando o formulário aparece
+            pela primeira vez na tela, e precisa ser apagado para que outro dado
+            seja submetido no lugar.
+        </p>
+        <form action="" method="">
+            <label for="name"> Primeiro nome</label>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Insira seu nome aqui"
+            />
+            <br />
 
-        <label for="age">Idade</label>
-        <input type="number" name="age" id="age" 
-        placeholder="Insira sua idade aqui">
-        <br>
+            <label for="age">Idade</label>
+            <input
+                type="number"
+                name="age"
+                id="age"
+                placeholder="Insira sua idade aqui"
+            />
+            <br />
 
-        <label for="email">E-mail</label>
-        <input type="text" name="email" id="email" placeholder="Insira seu e-mail aqui (gmail)" value="email@email.com">
-        <br>
+            <label for="email">E-mail</label>
+            <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Insira seu e-mail aqui (gmail)"
+                value="email@email.com"
+            />
+            <br />
 
-        <label for="password">Senha</label>
-        <input type="password" name="password" id="password" placeholder="Insira sua senha aqui">
-        <br><br>
+            <label for="password">Senha</label>
+            <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Insira sua senha aqui"
+            />
+            <br /><br />
 
-        <button type="submit"> Submeter formulário</button>
-    </form>
-</body>
+            <button type="submit">Submeter formulário</button>
+        </form>
+        <p>
+            Podemos também ter áreas onde o usário pode inserir textos maiores,
+            com a tag <strong>textarea</strong>
+        </p>
+        <p>
+            Além disso, podemos ter botões para escolher determinado valor com o
+            tipo
+            <strong>radio</strong> da tag <strong>input</strong>. Inputs do tipo
+            "radio" com o mesmo nome (mesmo valor do atributo <em>name</em>)
+            estão interligados: somente um pode ser escolhido. O valor a ser
+            transmitido, se um determinado radiobutton for escolhido, é o valor
+            do atributo <em>value</em>.
+        </p>
+        <form action="">
+            <h3>Área de texto:</h3>
+            <textarea name="t1" id="t1" cols="50" rows="10"></textarea>
+            <br />
+            <p>Escolha uma das opções a seguir:</p>
+            <input type="radio" name="n1" id="" value="A" /> A
+            <input type="radio" name="n1" id="" value="B" /> B
+            <input type="radio" name="n1" id="" value="C" /> C
+            <p>Outras opções, independentes dos botões acima:</p>
+            <input type="radio" name="n2" id="" value="D" /> D
+            <input type="radio" name="n2" id="" value="E" /> E
+            <p>
+                Por outro lado, com <em>checkboxes</em>, (tags input com
+                <em>type="checkbox"</em>), podemos múltiplos valores
+                simultaneamente. Podemos também atribuir um valor padrão: se
+                adicionarmos o atributo <em>checked</em>, a caixa aparece
+                selecionada por pardrão.
+            </p>
+            <input type="checkbox" name="n1" id="" value="A" checked /> A
+            <input type="checkbox" name="n1" id="" value="B" /> B
+            <input type="checkbox" name="n1" id="" value="C" /> C <br /><br />
+            <input type="submit" />
+        </form>
+        <h2>Selecionando entre múltiplas opções</h2>
+        <p>
+            <strong>Dentro de formulários</strong>, usando a tag
+            <strong>select</strong>, podemos implementar
+            <em>dropdown menus</em>, isto é, menus que descem, revelando opções
+            de escolha.
+        </p>
+        <form action="">
+            <select name="select-1" id="">
+                <option value="1">Opção 1</option>
+                <option value="2">Opção 2</option>
+                <option value="3">Opção 3</option>
+            </select>
+            <br /><br />
+            <input type="submit" />
+        </form>
+        <p>
+            Cada valor de cada radiobutton escolhido pelo usuário é salvo na
+            URL, da forma "&name_of_radiobutton=chosen_value".
+        </p>
+    </body>
 </html>
